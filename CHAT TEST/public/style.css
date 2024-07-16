@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: gray;
+}
+
+#chat-container {
+    width: 500px;
+    height: 600px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+#chat-window {
+    height: calc(100% - 50px);
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chatgpt-message {
+    background-color: #e5e5ea;
+    color: #000;
+    align-self: flex-start;
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#send-btn {
+    width: 60px;
+    height: 40px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#send-btn:hover {
+    background: #0056b3;
+}
